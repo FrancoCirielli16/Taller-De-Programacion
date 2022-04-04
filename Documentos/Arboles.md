@@ -31,7 +31,7 @@ Type
     end;
 ```
 
-Crear
+Insertar
 ===========
 ```pascal
 Procedure crear (var A:arbol; num:integer);
