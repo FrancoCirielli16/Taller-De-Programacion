@@ -238,7 +238,7 @@ end;
 ```
 busca elemento
 =======
-```
+```Pas
 function buscarC(a: arbol; cod: integer): arbol;
 begin
 	if (a=nil) then
@@ -255,7 +255,8 @@ begin
 						buscarC:= buscarC(a^.HD, cod)
 				end;
 		end;
-end;```
+end;
+```
 
 Encontrar_Ordenado
 ==================
