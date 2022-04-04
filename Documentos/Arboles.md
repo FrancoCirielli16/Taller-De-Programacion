@@ -232,7 +232,31 @@ begin
                     end
     end
 end;
+
+
+
 ```
+busca elemento
+=======
+```
+function buscarC(a: arbol; cod: integer): arbol;
+begin
+	if (a=nil) then
+		buscarC:= nil
+	else
+		begin
+			if (a^.dato.codP=cod) then
+				buscarC:= a
+			else
+				begin
+					if (cod<a^.dato.codP) then
+						buscarC:= buscarC(a^.HI, cod)
+					else
+						buscarC:= buscarC(a^.HD, cod)
+				end;
+		end;
+end;```
+
 Encontrar_Ordenado
 ==================
 ```Pas
