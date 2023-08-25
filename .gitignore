@@ -14,3 +14,8 @@
 /Practicas/Java/Ejercicio/nbproject/private/
 /Practicas/Java/PruebasDos/nbproject/private/
 /Practicas/Java/PruebasDos/build/
+**/*.o
+**/*.exe
+**/*.pdf
+**/*.txt
+**/*.png
