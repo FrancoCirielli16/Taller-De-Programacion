@@ -38,6 +38,8 @@ public class Ej03Matrices {
         System.out.println("Ingrese numero para ver si esta en la matriz");
         int num = Lector.leerInt();
         boolean ok = false;
+
+        // opcion ineficiente 
         for (int i = 0; i < 5 && !ok; i++) {
             for (int j = 0; j < 5 && !ok; j++) {
                 if (matriz[i][j]==num) {
@@ -46,6 +48,20 @@ public class Ej03Matrices {
                 }
             }
         }
+
+        // opcion que le gusta a la catedra 
+        while (fila < 5 && !encontrado) {
+        columna = 0; // Reiniciar la columna para cada nueva fila
+        while (columna < 5 && !encontrado) {
+            if (matriz[fila][columna] == num) {
+                System.out.println("Se encontró el número en la fila " + fila + " y columna " + columna);
+                encontrado = true;
+            }
+            columna++;
+        }
+        fila++;
+    }
+
         if (!ok)
             System.out.println("No se encontro el elemento");
         //Paso 7. lea un valor entero e indique si se encuentra o no en la matriz. En caso de encontrarse indique su ubicación (fila y columna)
